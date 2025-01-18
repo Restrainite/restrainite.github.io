@@ -5,6 +5,8 @@ plugins:
 title: Restrainite
 description: A ResoniteModLoader mod for Resonite that allows others to control restrictions of the local user.
 
-show_downloads: true
+show_downloads: false
 github:
+  is_project_page: true
+  is_user_page: false
   repository_url: https://github.com/Restrainite/RestrainiteMod
