@@ -12,6 +12,10 @@ There is currently no known way to restrict this based on user ids or similar, b
 
 We are currently polishing up the mod and expect a release within January 2025.
 
+## Download
+
+Alpha testers can download the latest dll from [Releases](https://github.com/Restrainite/RestrainiteMod/releases).
+
 ## Features
 
 Information will be provided on beta launch.
