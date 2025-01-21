@@ -17,47 +17,6 @@ There is currently no known way to restrict this based on user ids or similar, b
 
 We are currently polishing up the mod and expect a release on **Friday, 24th January 2025**.
 
-## Settings
-
-The mod uses presets to easily switch between different sets of restrictions. When the `None` preset is active, the mod
-is inactive and will not create status components.
-
-## Download
-
-You can download the latest dll from [Releases](https://github.com/Restrainite/RestrainiteMod/releases).
-
-## Installation
-
-1. Install either [MonkeyLoader](https://github.com/ResoniteModdingGroup/MonkeyLoader.GamePacks.ResoniteModLoader) or
-   [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader).
-2. Place [Restrainite.dll](https://github.com/Restrainite/RestrainiteMod/releases/latest/download/Restrainite.dll) into your 
-   `rml_mods` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\Resonite\rml_mods` for a 
-   default install. You can create it, if it's missing.
-3. If you use ResoniteModLoader, install [ResoniteModSettings](https://github.com/badhaloninja/ResoniteModSettings)
-4. Start Resonite.
-5. Check the settings menu to customize your options.
-
-## How to interact with the mod
-
-This mod creates a DynamicVariableSpace `Restrainite Status` under the root slot of the User and 
-a `Restrainite Status` slot with all restriction options. If the preset in the config is set to None, 
-the DynamicVariableSpace and the Restrainite slot will not be created, or it will be deleted, if it already exists. 
-Restriction settings, that are not enabled by the user, will also not have a slot under the Restrainite slot. 
-The tag of each restriction slot contains the name of the DynamicValueVariable required to set the value.
-
-To interact with this, create an empty slot. Add a DynamicVariableSpace with the name `Restrainite` to it. Add a 
-`DynamicReferenceVariable<User>` component with the name `Target User`, that points to the user who should be 
-affected by the restriction. Add a `DynamicValueVariable<bool>` component with the name listed in the tag of the 
-restriction. Toggle the value to enable/disable the restriction.
-
-For certain features, it's also possible to add a `DynamicValueVariable<string>` component with the same name, to select
- for example which Context Menu Items should be shown or hidden. The string is a comma seperated list. If items are 
-from the base game, use the locale keys to refer to them, e.g. Interaction.Undo. 
-See [Resonite Locale](https://github.com/Yellow-Dog-Man/Locale/blob/main/en.json)
-
-If you create a remote, use the tag "RestrainiteRemote" on the object root. This helps with the restrictions 
-`Deny Grabbing By Slot Tags` and similar.
-
 ## Why does this exist?
 
 There are people who have various reasons for wanting certain features of the game disabled. A lot of these features 
