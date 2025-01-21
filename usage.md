@@ -54,5 +54,6 @@ If you create a remote, use the tag `RestrainiteRemote` on the object root. This
 ## How to get yourself unstuck
 
 With the default settings, restarting the game will remove all restrictions. If you still manage to get yourself 
-completely stuck, you can always delete or modify the Restrainite settings file. 
-For MonkeyLoader that is under `MonkeyLoader/Configs/Restrainite.json`.
+completely stuck, you can always delete or modify the Restrainite settings file in the Resonite game folder. 
+- For MonkeyLoader that is under `MonkeyLoader/Configs/Restrainite.json`.
+- For ResoniteModLoader that is under `rml_config/Restrainite.json`. 
