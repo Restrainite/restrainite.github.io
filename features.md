@@ -1,3 +1,8 @@
+---
+layout: default
+title: Features / Restrictions
+---
+
 # Features/Restrictions
 
 _(As of version Beta 0.5.0)_
