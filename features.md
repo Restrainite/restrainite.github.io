@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Features / Restrictions
+nav_order: 3
 ---
 
 # Features/Restrictions
