@@ -18,6 +18,11 @@ There is currently no known way to restrict this based on user ids or similar, b
 
 We are currently polishing up the mod and expect a release on **Friday, 24th January 2025**.
 
+## Support
+If you encounter bugs or want to request a feature, please create an [issue](https://github.com/Restrainite/RestrainiteMod/issues/new?template=Blank+issue). **Please do not report bugs to Resonite, if you have this mod enabled.**
+
+Questions can be asked in Discord. More info on this later.
+
 ## Why does this exist?
 
 There are people who have various reasons for wanting certain features of the game disabled. A lot of these features 
@@ -30,3 +35,12 @@ This presents a strong incentive to not report any security exploits they find. 
 is not to remove safety features, but give people a consenting choice to disable them.
 
 If someone is using this mod maliciously, this a moderation issue. 
+
+## About the project
+RestrainiteMod is © 2024-2025 by SnepDrone, Zenuru
+
+### License
+RestrainiteMod is distributed by an [BSD 3-Clause License](https://github.com/Restrainite/RestrainiteMod?tab=BSD-3-Clause-1-ov-file).
+
+### Contributing
+As an external contributor, when contributing to this project, please first discuss the change you wish to make via issue before making a pull request. Read more in our [GitHub repo](https://github.com/Restrainite/RestrainiteMod/blob/main/CONTRIBUTING.md).
