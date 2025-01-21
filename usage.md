@@ -46,3 +46,9 @@ See [Resonite Locale](https://github.com/Yellow-Dog-Man/Locale/blob/main/en.json
 
 If you create a remote, use the tag "RestrainiteRemote" on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar.
+
+## How to get yourself unstuck
+
+With the default settings, restarting the game will remove all restrictions. If you still manage to get yourself 
+completely stuck, you can always delete or modify the Restrainite settings file. 
+For MonkeyLoader that is under `MonkeyLoader/Configs/Restrainite.json`.
