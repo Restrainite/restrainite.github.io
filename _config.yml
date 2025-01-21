@@ -10,3 +10,11 @@ aux_links:
     - "https://github.com/Restrainite/RestrainiteMod"
 
 color_scheme: dark
+
+
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: purple
