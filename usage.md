@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Installation and Usage
+nav_order: 2
 ---
 
 # Installation and Usage
