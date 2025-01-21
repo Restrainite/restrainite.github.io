@@ -30,9 +30,3 @@ This presents a strong incentive to not report any security exploits they find. 
 is not to remove safety features, but give people a consenting choice to disable them.
 
 If someone is using this mod maliciously, this a moderation issue. 
-
-## How to get yourself unstuck
-
-With the default settings, restarting the game will remove all restrictions. If you still manage to get yourself 
-completely stuck, you can always delete or modify the Restrainite settings file. 
-For MonkeyLoader that is under `MonkeyLoader/Configs/Restrainite.json`.
