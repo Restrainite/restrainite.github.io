@@ -29,7 +29,7 @@ is inactive and will not create status components.
 ## How to interact with the mod
 
 This mod creates a DynamicVariableSpace `Restrainite Status` under the root slot of the User and 
-a `Restrainite Status` slot with all restriction options. If the preset in the config is set to None, 
+a `Restrainite Status` slot with all active restriction options. If the preset in the config is set to None, 
 the DynamicVariableSpace and the Restrainite slot will not be created, or it will be deleted, if it already exists. 
 Restriction settings, that are not enabled by the user, will also not have a slot under the Restrainite slot. 
 The tag of each restriction slot contains the name of the DynamicValueVariable required to set the value.
