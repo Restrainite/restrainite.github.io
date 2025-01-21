@@ -21,7 +21,9 @@ We are currently polishing up the mod and expect a release on **Friday, 24th Jan
 ## Support
 If you encounter bugs or want to request a feature, please create an [issue](https://github.com/Restrainite/RestrainiteMod/issues/new?template=Blank+issue). **Please do not report bugs to Resonite, if you have this mod enabled.**
 
-Questions can be asked in Discord. More info on this later.
+You can ask questions and discuss ideas at [GitHub Discussions](https://github.com/Restrainite/RestrainiteMod/discussions)
+
+Questions can also be asked in Discord. More info on this later.
 
 ## Why does this exist?
 
