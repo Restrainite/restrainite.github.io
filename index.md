@@ -40,7 +40,7 @@ If someone is using this mod maliciously, this a moderation issue.
 RestrainiteMod is © 2024-2025 by SnepDrone, Zenuru
 
 ### License
-RestrainiteMod is distributed by an [BSD 3-Clause License](https://github.com/Restrainite/RestrainiteMod?tab=BSD-3-Clause-1-ov-file).
+RestrainiteMod is distributed under a [BSD 3-Clause License](https://github.com/Restrainite/RestrainiteMod?tab=BSD-3-Clause-1-ov-file).
 
 ### Contributing
 As an external contributor, when contributing to this project, please first discuss the change you wish to make via issue before making a pull request. Read more in our [GitHub repo](https://github.com/Restrainite/RestrainiteMod/blob/main/CONTRIBUTING.md).
