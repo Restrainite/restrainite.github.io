@@ -14,7 +14,7 @@ We are currently polishing up the mod and expect a release on **Friday, 24th Jan
 
 ## Settings
 
-The mod uses presets to easily switch between different sets of restrictions. When the None preset is active, the mod
+The mod uses presets to easily switch between different sets of restrictions. When the `None` preset is active, the mod
 is inactive and will not create status components.
 
 ## Features/Restrictions
