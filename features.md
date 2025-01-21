@@ -35,13 +35,13 @@ _(As of version Beta 0.5.0)_
 - `Prevent Switching World`: Prevents starting a new world, joining another session, leaving the current world, or changing focus.
 
 ## Visual
-- `Show User Avatars`: **[+ string]** When enabled, only user avatars are shown, whose user id is in the list.
-- `Hide User Avatars`: **[+ string]** When enabled, user avatars are hidden, whose user id is in the list.
+- `Show User Avatars`: **[+ string]** When enabled, only user avatars are shown, whose user ID (not usernames) is in the list.
+- `Hide User Avatars`: **[+ string]** When enabled, user avatars are hidden, whose user ID (not usernames) is in the list.
 - `Disable Nameplates`: Hides all avatar nameplates.
 
 ## Audio
 - `Prevent Hearing`: Forces all other users voices to be muted.
-- `Enforce Selective Hearing`: **[+ string]** When enabled, All users will be muted except those whose **user-ID's** (not usernames) are in this list.
+- `Enforce Selective Hearing`: **[+ string]** When enabled, All users will be muted except those whose user IDs (not usernames) are in this list.
   - _PreventHearing_ takes precedence over _EnforceSelectiveHearing_.
 - `Prevent Speaking`: Forces the user to be muted.
 - `Enforce Whispering`: Forces the user to only be able to talk in whisper mode (they can still mute themselves).
