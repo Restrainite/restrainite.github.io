@@ -10,7 +10,7 @@ There is currently no known way to restrict this based on user ids or similar, b
 
 ## Beta Release
 
-We are currently polishing up the mod and expect a release within January 2025.
+We are currently polishing up the mod and expect a release on Friday, 24th January 2025.
 
 ## Download
 
