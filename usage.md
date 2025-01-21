@@ -42,7 +42,7 @@ The status is also available under the UserRoot slot in Userspace.
 
 ### To interact with this and activate restrictions
 - Create an empty slot or use an existing one.
-- Add a `DynamicVariableSpace` with the name `Restrainite` to it.
+- Add a `DynamicVariableSpace` component with the name `Restrainite` to it.
 - Add a `DynamicReferenceVariable<User>` component with the name `Target User`, that points to the user who should be 
 affected by the restriction. This has to be in the same slot as the  `DynamicVariableSpace` component.
 - Add a `DynamicValueVariable<bool>` component with the name listed in the tag of the restriction under the `Restrainite Status`
