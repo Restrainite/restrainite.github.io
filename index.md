@@ -9,24 +9,22 @@ Restrainite is a [ResoniteModLoader](https://github.com/resonite-modding-group/R
 [Resonite](https://resonite.com/) that allows others to control restrictions of the local user. 
 
 {: .important }
-With the current use of dynamic variables, it's not possible to restrict the access. Anyone in
+With the current use of dynamic variables, it's not possible to restrict the access by others. Anyone in
 your game world can toggle it. Please keep that in mind and use the options in the extensive settings menu.
-There is currently no known way to restrict this based on user ids or similar, because of how the FrooxEngine works. 
-(PRs welcome!) We might add an option to use cloud variables in the future.
+There is currently no known way to restrict this based on user ids or similar, because of how the FrooxEngine and 
+the network protocol works. (PRs welcome!) We might add an option to use cloud variables in the future.
 
 ## Beta Release
-
 We are currently polishing up the mod and expect a release on **Friday, 24th January 2025**.
 
 ## Support
-If you encounter bugs or want to request a feature, please create an [issue](https://github.com/Restrainite/RestrainiteMod/issues/new?template=Blank+issue). **Please do not report bugs to Resonite, if you have this mod enabled.**
-
 You can ask questions and discuss ideas at [GitHub Discussions](https://github.com/Restrainite/RestrainiteMod/discussions)
+
+If you encounter bugs or want to request a feature, please create an [issue](https://github.com/Restrainite/RestrainiteMod/issues/new?template=Blank+issue). **Please do not report bugs to Resonite, if you have this mod enabled.**
 
 Questions can also be asked in Discord. More info on this later.
 
 ## Why does this exist?
-
 There are people who have various reasons for wanting certain features of the game disabled. A lot of these features 
 can also be disabled through other means like Protoflux and could be seen as malicious, because then they could be 
 applied to anyone. Those in-game items already exists. In NeosVR there also existed the NeosNoEscape mod, with similar 
