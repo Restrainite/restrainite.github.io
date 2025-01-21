@@ -1,3 +1,8 @@
+---
+layout: default
+title: Restrainite
+---
+
 ## Welcome
 
 Restrainite is a [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for 
