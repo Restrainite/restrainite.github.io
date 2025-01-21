@@ -4,11 +4,11 @@ title: Home
 nav_order: 1
 ---
 
-## Welcome
-
+{: .highlight }
 Restrainite is a [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for 
 [Resonite](https://resonite.com/) that allows others to control restrictions of the local user. 
 
+{: .important }
 With the current use of dynamic variables, it's not possible to restrict the access. Anyone in
 your game world can toggle it. Please keep that in mind and use the options in the extensive settings menu.
 There is currently no known way to restrict this based on user ids or similar, because of how the FrooxEngine works. 
