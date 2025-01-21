@@ -26,6 +26,10 @@ You can download the latest dll from [Releases](https://github.com/Restrainite/R
 The mod uses presets to easily switch between different sets of restrictions. When the `None` preset is active, the mod
 is inactive and will not create status components.
 
+## Features / Restrictions
+
+See [Features / Restrictions](features.html) page.
+
 ## How to interact with the mod
 
 This mod creates a DynamicVariableSpace `Restrainite Status` under the root slot of the User and 
@@ -44,7 +48,7 @@ For certain features, it's also possible to add a `DynamicValueVariable<string>`
 from the base game, use the locale keys to refer to them, e.g. Interaction.Undo. 
 See [Resonite Locale](https://github.com/Yellow-Dog-Man/Locale/blob/main/en.json)
 
-If you create a remote, use the tag "RestrainiteRemote" on the object root. This helps with the restrictions 
+If you create a remote, use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar.
 
 ## How to get yourself unstuck
