@@ -6,11 +6,6 @@ nav_order: 2
 
 # Installation and Usage
 
-## Settings
-
-The mod uses presets to easily switch between different sets of restrictions. When the `None` preset is active, the mod
-is inactive and will not create status components.
-
 ## Download
 
 You can download the latest dll from [Releases](https://github.com/Restrainite/RestrainiteMod/releases).
@@ -25,6 +20,11 @@ You can download the latest dll from [Releases](https://github.com/Restrainite/R
 3. If you use ResoniteModLoader, install [ResoniteModSettings](https://github.com/badhaloninja/ResoniteModSettings)
 4. Start Resonite.
 5. Check the settings menu to customize your options.
+
+## Settings
+
+The mod uses presets to easily switch between different sets of restrictions. When the `None` preset is active, the mod
+is inactive and will not create status components.
 
 ## How to interact with the mod
 
