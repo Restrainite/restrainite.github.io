@@ -8,7 +8,7 @@ nav_order: 2
 
 ## Download
 
-You can download the latest dll from [Releases](https://github.com/Restrainite/RestrainiteMod/releases).
+You can download the latest Restrainite.dll from [Releases](https://github.com/Restrainite/RestrainiteMod/releases).
 
 ## Installation
 
