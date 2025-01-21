@@ -32,23 +32,29 @@ See [Features / Restrictions](features.html) page.
 
 ## How to interact with the mod
 
-This mod creates a DynamicVariableSpace `Restrainite Status` under the root slot of the User and 
-a `Restrainite Status` slot with all active restriction options. If the preset in the config is set to None, 
-the DynamicVariableSpace and the Restrainite slot will not be created, or it will be deleted, if it already exists. 
-Restriction settings, that are not enabled by the user, will also not have a slot under the Restrainite slot. 
-The tag of each restriction slot contains the name of the DynamicValueVariable required to set the value.
+### Status output
+This mod creates a `DynamicVariableSpace` `Restrainite Status` under the root slot of the User and 
+a `Restrainite Status` slot with all active restriction options. If the preset in the settings menu is set to `None`, 
+the `DynamicVariableSpace` and the `Restrainite Status` slot will not be created, or it will be deleted, if it already exists. 
+Restriction settings, that are not enabled by the user, will also not have a slot under the `Restrainite Status` slot. 
+These `DynamicValueVariable<bool>`s are for output of the current state only and should not be modified. 
+The status is also available under the UserRoot slot in Userspace.
 
-To interact with this, create an empty slot. Add a DynamicVariableSpace with the name `Restrainite` to it. Add a 
-`DynamicReferenceVariable<User>` component with the name `Target User`, that points to the user who should be 
-affected by the restriction. Add a `DynamicValueVariable<bool>` component with the name listed in the tag of the 
-restriction. Toggle the value to enable/disable the restriction.
+### To interact with this and activate restrictions
+- Create an empty slot or use an existing one.
+- Add a `DynamicVariableSpace` with the name `Restrainite` to it.
+- Add a `DynamicReferenceVariable<User>` component with the name `Target User`, that points to the user who should be 
+affected by the restriction. This has to be in the same slot as the  `DynamicVariableSpace` component.
+- Add a `DynamicValueVariable<bool>` component with the name listed in the tag of the restriction under the `Restrainite Status`
+slot or on the [features page](features.html). This can also be in any child slot.
+- Toggle the value to enable/disable the restriction.
 
-For certain features, it's also possible to add a `DynamicValueVariable<string>` component with the same name, to select
- for example which Context Menu Items should be shown or hidden. The string is a comma seperated list. If items are 
-from the base game, use the locale keys to refer to them, e.g. Interaction.Undo. 
-See [Resonite Locale](https://github.com/Yellow-Dog-Man/Locale/blob/main/en.json)
+For certain features (marked with **[+ string]** on the [features page](features.html)), it's also possible to add 
+a `DynamicValueVariable<string>` component with the same name, to select for example which Context Menu Items should 
+be shown or hidden. The string is a comma separated list. If items are from the base game, use the locale keys to 
+refer to them, e.g. Interaction.Undo. See [Resonite Locale](https://github.com/Yellow-Dog-Man/Locale/blob/main/en.json)
 
-If you create a remote, use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
+If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar.
 
 ## How to get yourself unstuck
