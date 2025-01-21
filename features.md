@@ -20,12 +20,12 @@ _(As of version Beta 0.5.0)_
 - `Allow Grabbing By Slot Tags`: **[+ string]** When enabled, only allows grabbing items with tags in this list.
 - `Deny Grabbing By Slot Tags`: **[+ string]** When enabled, prevents grabbing any items with tags in this list.
   - _AllowGrabbingTags_ is evaluated before _DenyGrabbingTags_ if both are enabled.
-  - Slots without tag will be evaluated with the string "null". 
+  - Slots without tag will be evaluated with the string `null`. 
   - _PreventGrabbing_ takes precedence over both of these options.
 - `Allow Touching By Slot Tags`: **[+ string]** When enabled, only allows interacting with items with tags in this list.
 - `Deny Touching By Slot Tags`: **[+ string]** When enabled, prevents interacting with any items with tags in this list.
   - _AllowTouchingTags_ is evaluated before _DenyTouchingTags_ if both are enabled.
-  - Slots without tag will be evaluated with the string "null".
+  - Slots without tag will be evaluated with the string `null`.
   - _PreventPhysicalTouch_ and _PreventLaserTouch_ take precedence over these options.
 - `Prevent Non Dash Userspace Interaction`: Prevents interacting with anything in userspace besides the dashboard (facet anchors, userspace inspectors, etc.).
 
@@ -52,13 +52,13 @@ _(As of version Beta 0.5.0)_
 - `Show Context Menu Items`: **[+ string]** When enabled, any context menu items not in this list will be hidden.
 - `Hide Context Menu Items`: **[+ string]** When enabled, any context menu items in this list will be hidden.
   - _ShowContextMenuItems_ is evaluated before _HideContextMenuItems_ if both are enabled.
-  - For default context menu items, you need to list their locale string names. See the "interact with the mod" section below.
+  - For default context menu items, you need to list their locale string names. See the [How to interact with the mod](usage.html#how-to-interact-with-the-mod) section.
 - `Prevent Opening Dash`: Prevents opening the dashboard, and closes it if already opened.
 - `Show Dash Screens`: **[+ string]** When enabled, any dashboard screens not in this list will be hidden.
 - `Hide Dash Screens`: **[+ string]** When enabled, any dashboard screens in this list will be hidden.
   - The exit screen can not be hidden.
   - _ShowDashScreens_ is evaluated before _HideDashScreens_ if both are enabled.
-  - For non-custom screens, you need to list their locale string names. See the "interact with the mod" section below.
+  - For non-custom screens, you need to list their locale string names. See the [How to interact with the mod](usage.html#how-to-interact-with-the-mod) section.
 - `Disable Notifications`: The user can't see notifications anymore.
 - `Prevent Sending Messages`: The user can't send messages to contacts.
 - `Prevent Invite Contact`: The user can't invite contacts to the current world.
