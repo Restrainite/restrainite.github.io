@@ -36,6 +36,8 @@ changed in real-time if you have a way to edit mod configurations from in-game.
 - If you are using ResoniteModLoader, install the [ResoniteModSettings](https://github.com/badhaloninja/ResoniteModSettings/releases) mod.
 - If you are using MonkeyLoader, mod setting should be available in the stock settings menu.
 
+If you use ResoniteModSettings, enable `showNames - Whether to show the internal key names next to descriptions` in the ResoniteModSettings Mod settings.
+
 The mod uses presets to easily switch between different sets of restrictions. When the `None` preset is active, the mod
 is inactive and will not create status components. This means that the mod is practically undetectable when inactive.
 
