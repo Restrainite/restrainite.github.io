@@ -23,8 +23,56 @@ You can download the latest Restrainite.dll from [Releases](https://github.com/R
 
 ## Settings
 
+Restrainite offers you, the restrainee, detailed controls over which restrictions can be applied to you. These can be
+changed in real-time if you have a way to edit mod configurations from in-game.
+
+- If you are using ResoniteModLoader, install the [ResoniteModSettings](https://github.com/badhaloninja/ResoniteModSettings/releases) mod.
+- If you are using MonkeyLoader, mod setting should be available in the stock settings menu.
+
 The mod uses presets to easily switch between different sets of restrictions. When the `None` preset is active, the mod
-is inactive and will not create status components.
+is inactive and will not create status components. This means that the mod is practically undetectable when inactive.
+
+The mod settings are broken up into a couple of groups as follows.
+
+### Presets
+
+Restrainite has a preset system to quickly switch between different sets of active restrictions. There are a total of 8
+preset options:
+- 2 Default (All & None)
+- 5 Stored (Alpha, Beta, Gamma, Delta, Omega)
+- A "Customized" fallback, when not using a stored preset.
+
+When the `Preset` option is changed to *All* or *None*, every restriction type is enabled or disabled respectively. The
+*Customized* preset is automatically switched to if you have a mixture of enabled/disabled restrictions, and you aren't
+using one of the stored presets. The *Stored* presets are persistent, meaning any restrictions changed while one is
+active will be saved to that preset. The *Customized* preset is not saved.
+
+The `Preset on Startup` option will determine what preset is used by default, but this gets overridden by the options
+under listed in the "World visibility/access presets" section below.
+
+### Prevention types
+
+See the [Features / Restrictions](features.html) page for a description of each restriction type. All the toggles in
+this section determine whether the respective restriction can or can not be applied to you. Enabling an option here does
+not apply the restriction, it only allows it to be applied by compatible items.
+
+Again, if your currently selected `Preset` is a stored preset, any changes you make will be saved to that preset.
+
+### World visibility/access presets
+
+All the options in this section, `Change to Preset, if world permissions are ___` are a safety mechanism to disable (or
+automatically enable) parts of the mod if your current world's visibility and/or access level is changed. Setting one of
+these values to "DoNotChange" will, as it says, not change the preset if the condition is met.
+
+The default options will disable all prevention types if the world goes from private to public.
+
+### Miscellaneous
+
+- `Allow Restrictions from Focused World only`: When enabled, only your currently focused world is check when
+determining which restrictions should be applied. Otherwise, any world you have open can apply restrictions that will
+affect you in your currently focused world.
+- `Send dynamic impulses`: Sends dynamic impulses to any Flux within your user root every time a restriction is enabled
+or disabled.
 
 ## Features / Restrictions
 
