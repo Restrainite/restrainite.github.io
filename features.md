@@ -6,7 +6,7 @@ nav_order: 3
 
 # Features/Restrictions
 
-_(As of version Beta 0.5.0)_
+_(As of version Beta 1.0.0)_
 
 ## Interaction
 - `Prevent Equipping Avatar`: Prevents equipping in-world avatars or switching from inventory.
