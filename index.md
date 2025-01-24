@@ -39,6 +39,8 @@ If someone is using this mod maliciously, this a moderation issue.
 ## About the project
 RestrainiteMod is © 2024-2025 by SnepDrone, Zenuru
 
+Tested by Fuzy Sidwell and others.
+
 ### License
 RestrainiteMod is distributed under a [BSD 3-Clause License](https://github.com/Restrainite/RestrainiteMod?tab=BSD-3-Clause-1-ov-file).
 
