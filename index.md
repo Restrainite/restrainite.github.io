@@ -5,8 +5,11 @@ nav_order: 1
 ---
 
 {: .highlight }
-Restrainite is a [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for 
-[Resonite](https://resonite.com/) that allows others to control restrictions of the local user. 
+> Restrainite is a [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for 
+> [Resonite](https://resonite.com/) that allows others to control restrictions of the local user. 
+>
+> Restrainite is currently in Beta, there will still be changes to the behaviour, features and how it will
+> interact with Resonite. The current feature set is somewhat stable and has already been tested over the last two months.
 
 {: .important }
 With the current use of dynamic variables, it's not possible to restrict the access by others. Anyone in
