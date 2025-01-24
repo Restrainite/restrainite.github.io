@@ -68,11 +68,12 @@ The default options will disable all prevention types if the world goes from pri
 
 ### Miscellaneous
 
-- `Allow Restrictions from Focused World only`: When enabled, only your currently focused world is check when
+- `Allow Restrictions from Focused World only`: When enabled, only your currently focused world is checked, when
 determining which restrictions should be applied. Otherwise, any world you have open can apply restrictions that will
 affect you in your currently focused world.
 - `Send dynamic impulses`: Sends dynamic impulses to any Flux within your user root every time a restriction is enabled
-or disabled.
+or disabled. Two impulses will be send, one of type string to `Restrainite Change` and one of type bool to `Restrainite `
+and the name of the restriction, e.g. `Restrainite Prevent Equipping Avatar`.
 
 ## Features / Restrictions
 
