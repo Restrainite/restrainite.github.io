@@ -19,7 +19,8 @@ You can download the latest Restrainite.dll from [Releases](https://github.com/R
    default install. You can create it, if it's missing.
 3. If you use ResoniteModLoader, install [ResoniteModSettings](https://github.com/badhaloninja/ResoniteModSettings)
 4. Start Resonite.
-5. Check the settings menu to customize your options.
+5. If you use ResoniteModSettings, enable `showNames - Whether to show the internal key names next to descriptions` in the ResoniteModSettings Mod settings.
+7. Check the settings menu to customize your options.
 
 {: .important }
 With the current use of dynamic variables, it's not possible to restrict the access by others. Anyone in
