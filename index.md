@@ -14,9 +14,6 @@ your game world can toggle it. Please keep that in mind and use the options in t
 There is currently no known way to restrict this based on user ids or similar, because of how the FrooxEngine and 
 the network protocol works. (PRs welcome!) We might add an option to use cloud variables in the future.
 
-## Beta Release
-We are currently polishing up the mod and expect a release on **Friday, 24th January 2025**.
-
 ## Support
 You can ask questions and discuss ideas at [GitHub Discussions](https://github.com/Restrainite/RestrainiteMod/discussions)
 
