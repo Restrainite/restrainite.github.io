@@ -21,6 +21,12 @@ You can download the latest Restrainite.dll from [Releases](https://github.com/R
 4. Start Resonite.
 5. Check the settings menu to customize your options.
 
+{: .important }
+With the current use of dynamic variables, it's not possible to restrict the access by others. Anyone in
+your game world can toggle it. Please keep that in mind and use the options in the extensive settings menu.
+There is currently no known way to restrict this based on user ids or similar, because of how the FrooxEngine and 
+the network protocol works. (PRs welcome!) We might add an option to use cloud variables in the future.
+
 ## Settings
 
 Restrainite offers you, the restrainee, detailed controls over which restrictions can be applied to you. These can be
