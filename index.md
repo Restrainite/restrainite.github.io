@@ -41,7 +41,7 @@ RestrainiteMod is © 2024-2025 by SnepDrone, Zenuru
 
 Idea by Fuzy Sidwell
 
-Tested by Azavit, Fuzy Sidwell, Sylvan and others.
+Tested by Azavit, Fuzy Sidwell, K3nzC0, Sylvan and others.
 
 ### License
 RestrainiteMod is distributed under a [BSD 3-Clause License](https://github.com/Restrainite/RestrainiteMod?tab=BSD-3-Clause-1-ov-file).
