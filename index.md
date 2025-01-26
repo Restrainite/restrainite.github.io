@@ -40,6 +40,7 @@ If someone is using this mod maliciously, this a moderation issue.
 RestrainiteMod is © 2024-2025 by SnepDrone, Zenuru
 
 Idea by Fuzy Sidwell
+
 Tested by Azavit, Fuzy Sidwell, Sylvan and others.
 
 ### License
