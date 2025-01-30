@@ -130,6 +130,10 @@ a `DynamicValueVariable<string>` component with the same name, to select for exa
 be shown or hidden. The string is a comma separated list. If items are from the base game, use the locale keys to 
 refer to them, e.g. Interaction.Undo. See [Resonite Locale](https://github.com/Yellow-Dog-Man/Locale/blob/main/en.json)
 
+For certain features (marked with **[+ float]** on the [features page](features.html)), it's also possible to add 
+a `DynamicValueVariable<float>` component with the same name, to set a value. 
+Unless otherwise noted, the smallest value is used, if more than one exists.
+
 If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar.
 
