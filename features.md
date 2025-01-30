@@ -77,3 +77,4 @@ _(As of version 1.0.0)_
 - `Prevent Leaving Anchors`: Prevents the user from leaving any anchor themselves.
 - `Prevent Movement`: Prevent the user being able to move around via VR controller or keyboard.
 - `Prevent Turning`: Prevent the user from turning his body via VR controller or look around via mouse or keyboard. The user is still able to look around in VR by turning his head. Turning can't be restricted for Gamepad users.
+- `Movement Speed Multiplier`: **[+ float]** When enabled, the movement speed is multiplied by a value set in `DynamicValueVariable<float>` with the same name. The value is limited from 0.0 to 1.0. If the value is 1.0, the user moves with normal speed, if it's lower, they are slowed down.
