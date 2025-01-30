@@ -79,7 +79,7 @@ intent of misusing it, this is a breach of consent and a moderation issue.
 - If no password is set, the value of the `DynamicValueVariable<string>` component named `Password` is ignored.
 
 The `DynamicVariableSpace` `Restrainite Status` has a `DynamicValueVariable<bool>` component named `Requires Password` 
-to show if a password is required or not.
+to show, if a password is required or not.
 
 ### World visibility/access presets
 
