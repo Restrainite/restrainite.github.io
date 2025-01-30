@@ -117,6 +117,9 @@ refer to them, e.g. Interaction.Undo. See [Resonite Locale](https://github.com/Y
 If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar.
 
+The `DynamicVariableSpace` `Restrainite Status` in Userspace contains a `DynamicValueVariable<string>` named `Preset` to easily read and change 
+the current preset selected on the configuration screen.
+
 Restrictions are disabled, if a local world is focused.
 
 ## How to get yourself unstuck
