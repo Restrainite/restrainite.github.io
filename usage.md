@@ -117,6 +117,8 @@ refer to them, e.g. Interaction.Undo. See [Resonite Locale](https://github.com/Y
 If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar.
 
+Restrictions are disabled, if a local world is focused.
+
 ## How to get yourself unstuck
 
 With the default settings, restarting the game will remove all restrictions. If you still manage to get yourself 
