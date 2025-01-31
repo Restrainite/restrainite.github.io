@@ -67,6 +67,20 @@ not apply the restriction, it only allows it to be applied by compatible items.
 
 Again, if your currently selected `Preset` is a stored preset, any changes you make will be saved to that preset.
 
+### Password
+
+It's possible to set a password for each preset. Please note, that the password is not secret, once it's being used and then
+anyone can read it in the inspector or via Protoflux. If someone is copying the password manually or automatically with the 
+intent of misusing it, this is a breach of consent and a moderation issue.
+
+- If a password is set, then the restrictions will only activate, if the password is also set in a 
+`DynamicValueVariable<string>` component named `Password` in the same slot as the
+`DynamicVariableSpace` `Restrainite`.
+- If no password is set, the value of the `DynamicValueVariable<string>` component named `Password` is ignored.
+
+The `DynamicVariableSpace` `Restrainite Status` has a `DynamicValueVariable<bool>` component named `Requires Password` 
+to show, if a password is required or not.
+
 ### World visibility/access presets
 
 All the options in this section, `Change to Preset, if world permissions are ___` are a safety mechanism to disable (or
@@ -105,6 +119,8 @@ The status is also available under the UserRoot slot in Userspace.
 - Add a `DynamicVariableSpace` component with the name `Restrainite` to it.
 - Add a `DynamicReferenceVariable<User>` component with the name `Target User`, that points to the user who should be 
 affected by the restriction. This has to be in the same slot as the  `DynamicVariableSpace` component.
+- If a password is set, add a `DynamicValueVariable<string>` component with the name `Password` and the value of the password.
+This has to be in the same slot as the  `DynamicVariableSpace` component.
 - Add a `DynamicValueVariable<bool>` component with the name listed in the tag of the restriction under the `Restrainite Status`
 slot or on the [features page](features.html). This can also be in any child slot.
 - Toggle the value to enable/disable the restriction.
@@ -114,8 +130,17 @@ a `DynamicValueVariable<string>` component with the same name, to select for exa
 be shown or hidden. The string is a comma separated list. If items are from the base game, use the locale keys to 
 refer to them, e.g. Interaction.Undo. See [Resonite Locale](https://github.com/Yellow-Dog-Man/Locale/blob/main/en.json)
 
+For certain features (marked with **[+ float]** on the [features page](features.html)), it's also possible to add 
+a `DynamicValueVariable<float>` component with the same name, to set a value. 
+Unless otherwise noted, the smallest value is used, if more than one exists.
+
 If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar.
+
+The `DynamicVariableSpace` `Restrainite Status` in Userspace contains a `DynamicValueVariable<string>` named `Preset` to easily read and change 
+the current preset selected on the configuration screen.
+
+Restrictions are disabled, if a local world is focused.
 
 ## How to get yourself unstuck
 
