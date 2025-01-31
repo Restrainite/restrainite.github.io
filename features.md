@@ -4,7 +4,7 @@ title: Features / Restrictions
 nav_order: 3
 ---
 
-# Features/Restrictions
+# Features / Restrictions
 
 _(As of version 1.1.0)_
 
