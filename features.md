@@ -6,7 +6,7 @@ nav_order: 3
 
 # Features / Restrictions
 
-_(As of version 1.1.0)_
+_(As of version 1.1.4)_
 
 ## Interaction
 - `Prevent Equipping Avatar`: Prevents equipping in-world avatars or switching from inventory.
@@ -31,7 +31,7 @@ _(As of version 1.1.0)_
 - `Maximum Laser Distance`: **[+ float]** When enabled, the laser distance is limited by a value set in a `DynamicValueVariable<float>` with the same name. The value has a minimum of 0.0 and is the distance in global space.
 
 ## Respawning and changing worlds
-- `Prevent Respawning`: Prevents respawning, including emergency respawn gesture.
+- `Prevent Respawning`: Prevents respawning except for emergency respawning.
 - `Prevent Emergency Respawning`: Prevents using the emergency respawn gesture (can still respawn via session users tab).
 - `Prevent Switching World`: Prevents starting a new world, joining another session, leaving the current world, or changing focus.
 
