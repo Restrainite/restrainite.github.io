@@ -1,0 +1,30 @@
+name: Update Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Tag Name'
+        required: true
+        type: string
+
+jobs:
+  update-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: true
+        
+      - name: Write the tag name to current_version file
+        run: |
+          echo "${{ github.event.inputs.tag_name }}" > current_version
+
+      - name: Commit and push current_version file
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add current_version
+          git commit -m "Update current_version to ${{ github.event.inputs.tag_name }}"
+          git push origin main
