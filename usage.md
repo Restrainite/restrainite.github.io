@@ -125,6 +125,8 @@ This has to be in the same slot as the  `DynamicVariableSpace` component.
 slot or on the [features page](features.html). This can also be in any child slot.
 - Toggle the value to enable/disable the restriction.
 
+[Screenshot of the steps above](basic_setup.jpg)
+
 For certain features (marked with **[+ string]** on the [features page](features.html)), it's also possible to add 
 a `DynamicValueVariable<string>` component with the same name, to select for example which Context Menu Items should 
 be shown or hidden. The string is a comma separated list. If items are from the base game, use the locale keys to 
@@ -141,6 +143,26 @@ The `DynamicVariableSpace` `Restrainite Status` in Userspace contains a `Dynamic
 the current preset selected on the configuration screen.
 
 Restrictions are disabled, if a local world is focused.
+
+### How to use By Slot Tags restrictions
+
+There are currently the following restrictions that can be restricted to slot tags:
+- `Allow Grabbing By Slot Tags` and `Deny Grabbing By Slot Tags`
+- `Allow Touching By Slot Tags` and `Deny Touching By Slot Tags`
+- `Allow Hearing By Slot Tags` and `Deny Hearing By Slot Tags`
+
+This checks the tag of slot that triggered the event, for example the one containing the audio output component, and it
+checks the tag of the object root slot, that is the current or any parent slot that contains the object root component.
+
+If the slot tag is empty, it will be evaluated as the string `null`.
+
+If `Allow * By Slot Tags` is active, the component slot tag and/or the object root slot tag must be in the allow list,
+to be allowed by the restriction. If neither of the tags is in the allow list, it is disallowed.
+
+If `Deny * By Slot Tags` is active and the component slot tag and/or the object root slot tag is in the deny list, then
+it is disallowed by the restriction. Deny takes precedence over Allow.
+
+This behaviour has slightly changed in version v1.2.0.
 
 ## How to get yourself unstuck
 
