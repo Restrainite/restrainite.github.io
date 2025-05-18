@@ -37,7 +37,7 @@ is not to remove safety features, but give people a consenting choice to disable
 If someone is using this mod maliciously, this a moderation issue. 
 
 ## About the project
-RestrainiteMod is © 2024-2025 by SnepDrone, Zenuru
+RestrainiteMod is © 2024-2025 by SnepDrone, Uruloke, Zenuru
 
 Idea by Fuzy Sidwell
 
