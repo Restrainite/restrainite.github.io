@@ -25,7 +25,7 @@ _(As of version 1.2.0)_
 - `Deny Touching By Slot Tags`: **[+ string]** When enabled, prevents interacting with any items with tags in this list.
   - See the [How to use By Slot Tags restrictions](usage.html#how-to-use-by-slot-tags-restrictions) section.
   - _PreventPhysicalTouch_ and _PreventLaserTouch_ take precedence over these options.
-- `Prevent Non Dash Userspace Interaction`: Prevents interacting with anything in userspace besides the dashboard (facet anchors, userspace inspectors, etc.).
+- `Prevent Non Dash Userspace Interaction`: Prevents interacting with anything in userspace besides the dashboard and notice popups. (Facet anchors, userspace inspectors, etc. can no longer be interacted with.)
 - `Maximum Laser Distance`: **[+ float]** When enabled, the laser distance is limited by a value set in a `DynamicValueVariable<float>` with the same name. The value has a minimum of 0.0 and is the distance in global space.
 
 ## Respawning and changing worlds
@@ -77,7 +77,7 @@ _(As of version 1.2.0)_
 - `Prevent User Scaling`: Prevents the user from rescaling themselves.
 - `Prevent Crouching`: Prevents crouching in desktop mode.
 - `Prevent Jumping`: Prevents jumping, but does not prevent exiting anchors.
-- `Prevent Running`: Prevents running, when using keyboard (double tap or shift) or gamepad controls (joystick press).
+- `Prevent Running`: Prevents running. On desktop, this disables the sprint input, and in VR, the user can't use both joysticks to move faster.
 - `Prevent Climbing`: Prevents climbing by grabbing the world or characters.
 - `Prevent Change Locomotion`: Prevents the user from changing their locomotion mode.
 - `Reset User Scale`: Utility variable that resets a user to their default scale.
@@ -88,3 +88,4 @@ _(As of version 1.2.0)_
 - `Prevent Turning`: Prevent the user from turning his body via VR controller or look around via mouse or keyboard. The user is still able to look around in VR by turning his head. Turning can't be restricted for Gamepad users.
 - `Movement Speed Multiplier`: **[+ float]** When enabled, the movement speed is multiplied by a value set in a `DynamicValueVariable<float>` with the same name. The value is limited from 0.0 to 1.0. If the value is 1.0, the user moves with normal speed, if it's lower, they are slowed down.
 - `Tracker Movement Speed`: **[+ float]** When enabled, the movement speed of the VR trackers can be limited. This value is used internally with SmoothLerp, so 0.0 means no movement, higher values like 100.0 makes it instant. (new in v1.2.0)
+- `Disable VR Trackers`: When enabled, VR controllers and full-body trackers are disabled, causing the user to pose like they are in desktop mode. (new in v1.2.0)
