@@ -27,6 +27,7 @@ _(As of version 1.2.0)_
   - _PreventPhysicalTouch_ and _PreventLaserTouch_ take precedence over these options.
 - `Prevent Non Dash Userspace Interaction`: Prevents interacting with anything in userspace besides the dashboard and notice popups. (Facet anchors, userspace inspectors, etc. can no longer be interacted with.)
 - `Maximum Laser Distance`: **[+ float]** When enabled, the laser distance is limited by a value set in a `DynamicValueVariable<float>` with the same name. The value has a minimum of 0.0 and is the distance in global space.
+- `Prevent Edit Mode`: Prevents activation of the Edit Mode (F2).
 
 ## Respawning and changing worlds
 - `Prevent Respawning`: Prevents respawning except for emergency respawning.
