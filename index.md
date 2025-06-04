@@ -6,10 +6,7 @@ nav_order: 1
 
 {: .highlight }
 > Restrainite is a [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for 
-> [Resonite](https://resonite.com/) that allows others to control restrictions of the local user. 
->
-> Restrainite is currently in **Beta**, there will still be changes to the behaviour, features and how it will
-> interact with Resonite. The current feature set is somewhat stable and has already been tested over the last two months.
+> [Resonite](https://resonite.com/) that allows others to control restrictions of the local user.
 
 {: .important }
 With the current use of dynamic variables, it's not possible to restrict the access by others. Anyone in
@@ -22,7 +19,7 @@ You can ask questions and discuss ideas at [GitHub Discussions](https://github.c
 
 If you encounter bugs or want to request a feature, please create an [issue](https://github.com/Restrainite/RestrainiteMod/issues/new?template=Blank+issue). **Please do not report bugs to Resonite, if you have this mod enabled.**
 
-Questions can also be asked in Discord. More info on this later.
+Questions can also be asked in the Misfit Menagerie Discord.
 
 ## Why does this exist?
 There are people who have various reasons for wanting certain features of the game disabled. A lot of these features 
@@ -37,7 +34,7 @@ is not to remove safety features, but give people a consenting choice to disable
 If someone is using this mod maliciously, this a moderation issue. 
 
 ## About the project
-RestrainiteMod is © 2024-2025 by SnepDrone, Zenuru
+RestrainiteMod is © 2024-2025 by SnepDrone, Uruloke, Zenuru
 
 Idea by Fuzy Sidwell
 

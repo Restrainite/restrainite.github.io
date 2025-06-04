@@ -20,7 +20,7 @@ You can download the latest Restrainite.dll from [Releases](https://github.com/R
 3. If you use ResoniteModLoader, install [ResoniteModSettings](https://github.com/badhaloninja/ResoniteModSettings)
 4. Start Resonite.
 5. If you use ResoniteModSettings, enable `showNames - Whether to show the internal key names next to descriptions` in the ResoniteModSettings Mod settings.
-7. Check the settings menu to customize your options.
+6. Check the settings menu to customize your options.
 
 {: .important }
 With the current use of dynamic variables, it's not possible to restrict the access by others. Anyone in
@@ -74,7 +74,7 @@ anyone can read it in the inspector or via Protoflux. If someone is copying the 
 intent of misusing it, this is a breach of consent and a moderation issue.
 
 - If a password is set, then the restrictions will only activate, if the password is also set in a 
-`DynamicValueVariable<string>` component named `Password` in the same slot as the
+`DynamicValueVariable<string>` component named `Password` in the slot or a child slot of the
 `DynamicVariableSpace` `Restrainite`.
 - If no password is set, the value of the `DynamicValueVariable<string>` component named `Password` is ignored.
 
@@ -97,8 +97,13 @@ affect you in your currently focused world.
 - `Send dynamic impulses`: Sends dynamic impulses to any Flux within your user root every time a restriction is enabled
 or disabled.
 
-Two impulses will be send, one of type string to `Restrainite Change` and one of type bool to `Restrainite ` 
-and the name of the restriction, e.g. `Restrainite Prevent Equipping Avatar`.
+Two or more impulses will be send:
+ - One of type string to `Restrainite Change`, that contains a string representation of the change.
+ - One of type bool to `Restrainite ` and the name of the restriction, e.g. `Restrainite Prevent Equipping Avatar`.
+ - If the restriction is of type float, it will send one of type float to `Restrainite ` and the name of the restriction, 
+e.g. `Restrainite Hearing Volume`.
+ - If the restriction is of type string, it will send one of type string to `Restrainite ` and the name of the restriction,
+   e.g. `Restrainite Show User Avatars`.
 
 ## Features / Restrictions
 
@@ -118,12 +123,13 @@ The status is also available under the UserRoot slot in Userspace.
 - Create an empty slot or use an existing one.
 - Add a `DynamicVariableSpace` component with the name `Restrainite` to it.
 - Add a `DynamicReferenceVariable<User>` component with the name `Target User`, that points to the user who should be 
-affected by the restriction. This has to be in the same slot as the  `DynamicVariableSpace` component.
+affected by the restriction.
 - If a password is set, add a `DynamicValueVariable<string>` component with the name `Password` and the value of the password.
-This has to be in the same slot as the  `DynamicVariableSpace` component.
 - Add a `DynamicValueVariable<bool>` component with the name listed in the tag of the restriction under the `Restrainite Status`
-slot or on the [features page](features.html). This can also be in any child slot.
+slot or on the [features page](features.html).
 - Toggle the value to enable/disable the restriction.
+
+[Screenshot of the steps above](basic_setup.jpg)
 
 For certain features (marked with **[+ string]** on the [features page](features.html)), it's also possible to add 
 a `DynamicValueVariable<string>` component with the same name, to select for example which Context Menu Items should 
@@ -141,6 +147,26 @@ The `DynamicVariableSpace` `Restrainite Status` in Userspace contains a `Dynamic
 the current preset selected on the configuration screen.
 
 Restrictions are disabled, if a local world is focused.
+
+### How to use By Slot Tags restrictions
+
+There are currently the following restrictions that can be restricted to slot tags:
+- `Allow Grabbing By Slot Tags` and `Deny Grabbing By Slot Tags`
+- `Allow Touching By Slot Tags` and `Deny Touching By Slot Tags`
+- `Allow Hearing By Slot Tags` and `Deny Hearing By Slot Tags`
+
+This checks the tag of slot that triggered the event, for example the one containing the audio output component, and it
+checks the tag of the object root slot, that is the current or any parent slot that contains the object root component.
+
+If the slot tag is empty, it will be evaluated as the string `null`.
+
+If `Allow * By Slot Tags` is active, the component slot tag and/or the object root slot tag must be in the allow list,
+to be allowed by the restriction. If neither of the tags is in the allow list, it is disallowed.
+
+If `Deny * By Slot Tags` is active and the component slot tag and/or the object root slot tag is in the deny list, then
+it is disallowed by the restriction. Deny takes precedence over Allow.
+
+This behaviour has slightly changed in version v1.2.0.
 
 ## How to get yourself unstuck
 
