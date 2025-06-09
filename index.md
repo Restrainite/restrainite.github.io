@@ -62,4 +62,7 @@ Tested by Azavit, Fuzy Sidwell, K3nzC0, Sylvan and others.
 RestrainiteMod is distributed under a [BSD 3-Clause License](https://github.com/Restrainite/RestrainiteMod?tab=BSD-3-Clause-1-ov-file).
 
 ### Contributing
-As an external contributor, when contributing to this project, please first discuss the change you wish to make via issue before making a pull request. Read more in our [GitHub repo](https://github.com/Restrainite/RestrainiteMod/blob/main/CONTRIBUTING.md).
+As an external contributor, when contributing to this project, please first discuss the change you wish to make via issue 
+before making a pull request. 
+
+Read more in our [GitHub repo](https://github.com/Restrainite/RestrainiteMod/blob/main/CONTRIBUTING.md).
