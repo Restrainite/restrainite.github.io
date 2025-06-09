@@ -17,9 +17,11 @@ the network protocol works. (PRs welcome!) We might add an option to use cloud v
 ## Support
 You can ask questions and discuss ideas at [GitHub Discussions](https://github.com/Restrainite/RestrainiteMod/discussions)
 
-If you encounter bugs or want to request a feature, please create an [issue](https://github.com/Restrainite/RestrainiteMod/issues/new?template=Blank+issue). **Please do not report bugs to Resonite, if you have this mod enabled.**
+If you encounter bugs or want to request a feature, please create an [issue](https://github.com/Restrainite/RestrainiteMod/issues/new?template=Blank+issue). 
 
-Questions can also be asked in the Misfit Menagerie Discord.
+**Please do not report bugs to Resonite, if you have this mod enabled.**
+
+Questions can also be asked in the Misfit Menagerie Discord. Contact Lute to join.
 
 ## Why does this exist?
 There are people who have various reasons for wanting certain features of the game disabled. A lot of these features 
@@ -32,6 +34,22 @@ This presents a strong incentive to not report any security exploits they find. 
 is not to remove safety features, but give people a consenting choice to disable them.
 
 If someone is using this mod maliciously, this a moderation issue. 
+
+## Can I rely on this? What if a future Resonite update breaks Restrainite.
+
+Breaking because of updates can always happen and is also very likely, if the game code changes that we patch. 
+We are reducing the impact of failures as much as possible by using defensive programming. In most cases only a single 
+feature should malfunction. We are a team of three dedicated developers to work on this, in case something happens. 
+Due to a team effort, the last breaking release was fixed within 4 hours of 
+[reporting](https://github.com/Restrainite/RestrainiteMod/issues/87). Our code is open source and we are always open to
+bug reports, feature and pull requests. Talk to us on Resonite.
+
+We plan to support this for the future, because we are long term active supporters of Resonite and use the mod 
+ourselves on a daily bases.
+
+To prevent having too much old code over time, we might deprecate features and eventually remove them. Deprecated features
+should not be used anymore and there will be a replacement available. Unless the code in Resonite changes so much, 
+that we can't provide that feature anymore.
 
 ## About the project
 RestrainiteMod is © 2024-2025 by SnepDrone, Uruloke, Zenuru
