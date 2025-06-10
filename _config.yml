@@ -5,9 +5,9 @@ description: A ResoniteModLoader mod for Resonite that allows others to control 
 
 aux_links:
   "Download":
-    - "https://github.com/Restrainite/RestrainiteMod/releases/latest"
-  "RestrainiteMod on GitHub":
-    - "https://github.com/Restrainite/RestrainiteMod"
+    - "https://github.com/Restrainite/Restrainite/releases/latest"
+  "Restrainite on GitHub":
+    - "https://github.com/Restrainite/Restrainite"
 
 color_scheme: dark
 

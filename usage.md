@@ -8,13 +8,13 @@ nav_order: 2
 
 ## Download
 
-You can download the latest Restrainite.dll from [Releases](https://github.com/Restrainite/RestrainiteMod/releases).
+You can download the latest Restrainite.dll from [Releases](https://github.com/Restrainite/Restrainite/releases).
 
 ## Installation
 
 1. Install either [MonkeyLoader](https://github.com/ResoniteModdingGroup/MonkeyLoader.GamePacks.ResoniteModLoader) or
    [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader).
-2. Place [Restrainite.dll](https://github.com/Restrainite/RestrainiteMod/releases/latest/download/Restrainite.dll) into your 
+2. Place [Restrainite.dll](https://github.com/Restrainite/Restrainite/releases/latest/download/Restrainite.dll) into your 
    `rml_mods` folder. This folder should be at `C:\Program Files (x86)\Steam\steamapps\common\Resonite\rml_mods` for a 
    default install. You can create it, if it's missing.
 3. If you use ResoniteModLoader, install [ResoniteModSettings](https://github.com/badhaloninja/ResoniteModSettings)
