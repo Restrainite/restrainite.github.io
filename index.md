@@ -21,7 +21,7 @@ If you encounter bugs or want to request a feature, please create an [issue](htt
 
 **Please do not report bugs to Resonite, if you have this mod enabled.**
 
-Questions can also be asked in the Misfit Menagerie Discord. Contact Lute to join.
+Questions can also be asked in the Misfit Menagerie Discord. Contact SpaceLute to join.
 
 ## Why does this exist?
 There are people who have various reasons for wanting certain features of the game disabled. A lot of these features 
