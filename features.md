@@ -41,11 +41,12 @@ _(As of version 1.2.0)_
 - `Prevent Reading`: Scrambles all text on screen, making it unable to read. (new in v1.2.0)
 
 ## Audio
+- `Always Hear Selected Users`: If the user id is added to the list, you will always hear the user, even if other restrictions would forbid it. (new in v1.2.3)
 - `Prevent Hearing`: Disables all audio outputs for the user, including other users voices. (new in v1.2.0)
 - `Prevent Hearing Of Users`: Forces all other users voices to be muted. (renamed in v1.2.0 from `Prevent Hearing`)
 - `Prevent Hearing Of Sounds`: Disables audio output for all sounds including multimedia, except for user voices. (new in v1.2.0)
 - `Enforce Selective Hearing`: **[+ string]** When enabled, All users will be muted except those whose user IDs (not usernames) are in this list.
-  - _PreventHearing_ takes precedence over _EnforceSelectiveHearing_.
+  - **[DEPRECATED]** Use `Prevent Hearing Of Users` and `Always Hear Selected Users` instead.
 - `Maximum Hearing Distance`: **[+ float]** Set a maximum distance in world units that the user can hear audio outputs. (new in v1.2.0)
 - `Allow Hearing By Slot Tags`: **[+ string]** When enabled, only audio outputs can be heard, whose slot have this tag. (new in v1.2.0)
 - `Deny Hearing By Slot Tags`: **[+ string]** When enabled, audio outputs can't be heard, whose slot have this tag. (new in v1.2.0)
@@ -73,6 +74,7 @@ _(As of version 1.2.0)_
 - `Prevent Sending Messages`: The user can't send messages to contacts.
 - `Prevent Invite Contact`: The user can't invite contacts to the current world.
 - `Prevent Third Person View`: Desktop users can't switch to third person view anymore.
+- `Hide Others Context Menus`: Don't show other users context menus. (new in v1.2.3)
 
 ## Locomotion
 - `Prevent User Scaling`: Prevents the user from rescaling themselves.
