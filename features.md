@@ -41,7 +41,7 @@ _(As of version 1.2.0)_
 - `Prevent Reading`: Scrambles all text on screen, making it unable to read. (new in v1.2.0)
 
 ## Audio
-- `Always Hear Selected Users`: If the user id is added to the list, you will always hear the user, even if other restrictions would forbid it. (new in v1.2.3)
+- `Always Hear Selected Users`: **[+ string]** If the user id is added to the list, you will always hear the user, even if other restrictions would forbid it. (new in v1.2.3)
 - `Prevent Hearing`: Disables all audio outputs for the user, including other users voices. (new in v1.2.0)
 - `Prevent Hearing Of Users`: Forces all other users voices to be muted. (renamed in v1.2.0 from `Prevent Hearing`)
 - `Prevent Hearing Of Sounds`: Disables audio output for all sounds including multimedia, except for user voices. (new in v1.2.0)
