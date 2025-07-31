@@ -159,7 +159,7 @@ Unless otherwise noted, the smallest value is used, if more than one exists.
 If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
 `Deny Grabbing By Slot Tags` and similar. Because of the high amount of features this mod provides, we recommend that you don't
 create a control object, that shows all the restrictions as separate options. They should be grouped into presets, so it
-is not too overwhelming for the users of your control object. For example group all interaction restrictions into one preset.
+is not too overwhelming for the users of your control object. For example group all interaction restrictions into one or two presets.
 
 ### Quickly change preset in config
 
