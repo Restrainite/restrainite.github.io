@@ -6,14 +6,14 @@ nav_order: 3
 
 # Features / Restrictions
 
-_(As of version 1.2.0)_
+_(As of version 1.3.5)_
 
 ## Interaction
 - `Prevent Equipping Avatar`: Prevents equipping in-world avatars or switching from inventory.
-- `Prevent Using Tools`: Prevents equipping tools, and drops them if already equipped.
-- `Prevent Grabbing`: Prevents grabbing objects physically/via laser, and drops any that are already grabbed.
-- `Prevent Laser Touch`: Prevents any laser-based interaction.
-- `Prevent Physical Touch`: Prevents any physically-based interaction.
+- `Prevent Using Tools`: **[+ Chirality?]** Prevents equipping tools, and drops them if already equipped.
+- `Prevent Grabbing`: **[+ Chirality?]** Prevents grabbing objects physically/via laser, and drops any that are already grabbed.
+- `Prevent Laser Touch`: **[+ Chirality?]** Prevents any laser-based interaction.
+- `Prevent Physical Touch`: **[+ Chirality?]** Prevents any physically-based interaction.
     - _PreventLaserTouch_ & _PreventPhysicalTouch_ also prevent grabbing respectively.
 - `Prevent Spawn Objects`: Prevents spawning objects into the current world.
 - `Prevent Save Items`: Prevents saving items to the inventory.
@@ -26,7 +26,7 @@ _(As of version 1.2.0)_
   - See the [How to use By Slot Tags restrictions](usage.html#how-to-use-by-slot-tags-restrictions) section.
   - _PreventPhysicalTouch_ and _PreventLaserTouch_ take precedence over these options.
 - `Prevent Non Dash Userspace Interaction`: Prevents interacting with anything in userspace besides the dashboard and notice popups. (Facet anchors, userspace inspectors, etc. can no longer be interacted with.)
-- `Maximum Laser Distance`: **[+ float]** When enabled, the laser distance is limited by a value set in a `DynamicValueVariable<float>` with the same name. The value has a minimum of 0.0 and is the distance in global space.
+- `Maximum Laser Distance`: **[+ float]** **[+ Chirality?]** When enabled, the laser distance is limited by a value set in a `DynamicValueVariable<float>` with the same name. The value has a minimum of 0.0 and is the distance in global space.
 - `Prevent Edit Mode`: Prevents activation of the Edit Mode (F2 or Session Settings Tab). (new in v1.2.0)
 
 ## Respawning and changing worlds
@@ -56,10 +56,12 @@ _(As of version 1.2.0)_
 - `Prevent Speaking`: Forces the user to be muted.
 - `Enforce Whispering`: Forces the user to only be able to talk in whisper mode (they can still mute themselves).
   - _PreventSpeaking_ takes precedence over _EnforceWhispering_.
+  - **[DEPRECATED]** Use `Maximum Voice Mode` with value `Whisper` instead.
 - `Speaking Volume`: **[+ float]** Set to a value between 0.0 (no volume) and 1.0 (full volume) to change the volume of the users voice. (new in v1.2.0)
+- `Maximum Voice Mode`: **[+ VoiceMode]** Sets the maximum voice mode the user can use. Prevent Shouting or Broadcast mode, or enforce Whispering. (new in v1.3.4)
 
 ## UI
-- `Prevent Opening Context Menu`: Prevents opening the context menu, and closes it if already opened.
+- `Prevent Opening Context Menu`: **[+ Chirality?]** Prevents opening the context menu, and closes it if already opened.
 - `Show Context Menu Items`: **[+ string]** When enabled, any context menu items not in this list will be hidden.
 - `Hide Context Menu Items`: **[+ string]** When enabled, any context menu items in this list will be hidden.
   - _ShowContextMenuItems_ is evaluated before _HideContextMenuItems_ if both are enabled.
@@ -81,12 +83,12 @@ _(As of version 1.2.0)_
 - `Prevent Crouching`: Prevents crouching in desktop mode.
 - `Prevent Jumping`: Prevents jumping, but does not prevent exiting anchors.
 - `Prevent Running`: Prevents running. On desktop, this disables the sprint input, and in VR, the user can't use both joysticks to move faster.
-- `Prevent Climbing`: Prevents climbing by grabbing the world or characters.
+- `Prevent Climbing`: **[+ Chirality?]** Prevents climbing by grabbing the world or characters.
 - `Prevent Change Locomotion`: Prevents the user from changing their locomotion mode.
 - `Reset User Scale`: Utility variable that resets a user to their default scale.
   - You should use this by enabling then disabling in the next frame. Think of it like an impulse.
   - Keeping it enabled does not prevent the user from rescaling themselves, and will only prevent other items from using this.
-- `Prevent Leaving Anchors`: Prevents the user from leaving any anchor themselves.
+- `Prevent Leaving Anchors`: **[+ AvatarAnchor]** Prevents the user from leaving any anchor themselves. If a `DynamicReferenceVariable<AvatarAnchor>` is set, the user is forced into that anchor.
 - `Prevent Movement`: Prevent the user being able to move around via VR controller or keyboard.
 - `Prevent Turning`: Prevent the user from turning his body via VR controller or look around via mouse or keyboard. The user is still able to look around in VR by turning his head. Turning can't be restricted for Gamepad users.
 - `Movement Speed Multiplier`: **[+ float]** When enabled, the movement speed is multiplied by a value set in a `DynamicValueVariable<float>` with the same name. The value is limited from 0.0 to 1.0. If the value is 1.0, the user moves with normal speed, if it's lower, they are slowed down.

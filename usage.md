@@ -99,13 +99,11 @@ status to busy, if you are not invisible.
 - `Send dynamic impulses`: Sends dynamic impulses to any Flux within your user root every time a restriction is enabled
 or disabled.
 
-Two or more impulses will be send:
+Two impulses will be send:
  - One of type string to `Restrainite Change`, that contains a string representation of the change.
  - One of type bool to `Restrainite ` and the name of the restriction, e.g. `Restrainite Prevent Equipping Avatar`.
- - If the restriction is of type float, it will send one of type float to `Restrainite ` and the name of the restriction, 
-e.g. `Restrainite Hearing Volume`.
- - If the restriction is of type string, it will send one of type string to `Restrainite ` and the name of the restriction,
-   e.g. `Restrainite Show User Avatars`.
+
+Other impulses have been removed in v1.2.9 due to performance reasons.
 
 ## Features / Restrictions
 
@@ -140,6 +138,18 @@ refer to them, e.g. Interaction.Undo. See [Resonite Locale](https://github.com/Y
 
 For certain features (marked with **[+ float]** on the [features page](features.html)), it's also possible to add 
 a `DynamicValueVariable<float>` component with the same name, to set a value. 
+Unless otherwise noted, the smallest value is used, if more than one exists.
+
+For certain features (marked with **[+ Chirality?>]** on the [features page](features.html)), it's also possible to add
+a `DynamicValueVariable<Chirality?>` component with the same name, to set a value.
+If the value is null, it applies to both sides. If the value is left or right, it only applies to the respective side.
+
+For certain features (marked with **[+ AvatarAnchor>]** on the [features page](features.html)), it's also possible to add
+a `DynamicReferenceVariable<AvatarAnchor>` component with the same name, to set a value. If more than one of these
+exists, a random one is selected. If the user is already in one of the anchors, he will not be moved.
+
+For certain features (marked with **[+ VoiceMode>]** on the [features page](features.html)), it's also possible to add
+a `DynamicValueVariable<VoiceMode>` component with the same name, to set a value. 
 Unless otherwise noted, the smallest value is used, if more than one exists.
 
 If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
