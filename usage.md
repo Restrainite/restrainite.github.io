@@ -131,6 +131,8 @@ slot or on the [features page](features.html).
 
 [Screenshot of the steps above](basic_setup.jpg)
 
+### Additional variables
+
 For certain features (marked with **[+ string]** on the [features page](features.html)), it's also possible to add 
 a `DynamicValueVariable<string>` component with the same name, to select for example which Context Menu Items should 
 be shown or hidden. The string is a comma separated list. If items are from the base game, use the locale keys to 
@@ -152,13 +154,19 @@ For certain features (marked with **[+ VoiceMode>]** on the [features page](feat
 a `DynamicValueVariable<VoiceMode>` component with the same name, to set a value. 
 Unless otherwise noted, the smallest value is used, if more than one exists.
 
+### Control objects
+
 If you create a grabbable control object, we recommend to use the tag `RestrainiteRemote` on the object root. This helps with the restrictions 
-`Deny Grabbing By Slot Tags` and similar.
+`Deny Grabbing By Slot Tags` and similar. Because of the high amount of features this mod provides, we recommend that you don't
+create a control object, that shows all the restrictions as separate options. They should be grouped into presets, so it
+is not too overwhelming for the users of your control object. For example group all interaction restrictions into one preset.
+
+### Quickly change preset in config
 
 The `DynamicVariableSpace` `Restrainite Status` in Userspace contains a `DynamicValueVariable<string>` named `Preset` to easily read and change 
 the current preset selected on the configuration screen.
 
-Restrictions are disabled, if a local world is focused.
+This can be added to an UI Element, that can be added to the dashboard.
 
 ### How to use By Slot Tags restrictions
 
