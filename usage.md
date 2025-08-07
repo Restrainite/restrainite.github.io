@@ -28,6 +28,21 @@ your game world can toggle it. Please keep that in mind and use the options in t
 There is currently no known way to restrict this based on user ids or similar, because of how the FrooxEngine and 
 the network protocol works. (PRs welcome!) We might add an option to use cloud variables in the future.
 
+## Pre-Release (The Splittening)
+
+If you want to use Restrainite with the new Resonite pre-release, download the following versions:
+- [ResoniteModLoader Net9 Pre-Release or newer](https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/prerelease)
+- [Restrainite v2.0.5 or newer](https://github.com/Restrainite/Restrainite/releases/tag/v2.0.5)
+- [ResoniteModSettings v2.3.0-prerelease.1 or newer](https://github.com/badhaloninja/ResoniteModSettings/releases/tag/v2.3.0-prerelease.1)
+
+1. Copy ResoniteModLoader.dll to the Libraries folder and make sure you move the old file to a backup location.
+2. Copy 0Harmony-Net9.dll into the rml_libs folder.
+3. To prevent old and not updated mods from loading, rename your current rml_mods folder to something else and create a new rml_mods folder.
+4. Copy Restrainite.dll and ResoniteModSettings.dll into the new rml_mods folder.
+5. Check the GitHub pages of other mods you are using for prerelease versions.
+
+If you want to use the stable version of Resonite again, revert all these changes.
+
 ## Settings
 
 Restrainite offers you, the restrainee, detailed controls over which restrictions can be applied to you. These can be
