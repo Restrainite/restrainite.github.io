@@ -28,7 +28,7 @@ your game world can toggle it. Please keep that in mind and use the options in t
 There is currently no known way to restrict this based on user ids or similar, because of how the FrooxEngine and 
 the network protocol works. (PRs welcome!) We might add an option to use cloud variables in the future.
 
-## Pre-Release (The Splittening)
+## Restrainite for Resonite Pre-Release (The Splittening)
 
 If you want to use Restrainite with the new Resonite prerelease version, download the following versions:
 - [ResoniteModLoader Net9 Pre-Release or newer](https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/prerelease)
