@@ -40,11 +40,11 @@ The following steps are for ResoniteModLoader, if you use MonkeyLoader follow th
 
 1. Activate the prerelease version of Resonite in Steam (Resonite → Context Menu (Right Click) → Properties → Betas → Beta Participation: prerelease) 
 2. (Optional) Under General → Launch Options add `-SkipIntroTutorial` to the text field to avoid the tutorial at start.
-3. Copy `ResoniteModLoader.dll` from the `Libraries` folder to a backup location and replace it with new downloaded `ResoniteModLoader.dll` file.
+3. Copy `ResoniteModLoader.dll` from the `Libraries` folder to a backup location and replace it with the new downloaded `ResoniteModLoader.dll` file.
 4. Copy `0Harmony-Net9.dll` into the `rml_libs` folder.
 5. To prevent old and not updated mods from loading, rename your current `rml_mods` folder to something else and create a new `rml_mods` folder.
 6. Copy `Restrainite.dll` and `ResoniteModSettings.dll` into the new `rml_mods` folder.
-7. Check the GitHub pages of other mods you are using for prerelease versions.
+7. Check the GitHub pages of other mods, you are using, for prerelease versions.
 8. Report any bugs you can find to our [issue tracker](https://github.com/Restrainite/Restrainite/issues).
 
 If you want to use the stable version of Resonite again, revert all these changes.
