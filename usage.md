@@ -30,16 +30,22 @@ the network protocol works. (PRs welcome!) We might add an option to use cloud v
 
 ## Pre-Release (The Splittening)
 
-If you want to use Restrainite with the new Resonite pre-release, download the following versions:
+If you want to use Restrainite with the new Resonite prerelease version, download the following versions:
 - [ResoniteModLoader Net9 Pre-Release or newer](https://github.com/resonite-modding-group/ResoniteModLoader/releases/tag/prerelease)
 - [Restrainite v2.0.5 or newer](https://github.com/Restrainite/Restrainite/releases/tag/v2.0.5)
 - [ResoniteModSettings v2.3.0-prerelease.1 or newer](https://github.com/badhaloninja/ResoniteModSettings/releases/tag/v2.3.0-prerelease.1)
 
-1. Copy ResoniteModLoader.dll to the Libraries folder and make sure you move the old file to a backup location.
-2. Copy 0Harmony-Net9.dll into the rml_libs folder.
-3. To prevent old and not updated mods from loading, rename your current rml_mods folder to something else and create a new rml_mods folder.
-4. Copy Restrainite.dll and ResoniteModSettings.dll into the new rml_mods folder.
-5. Check the GitHub pages of other mods you are using for prerelease versions.
+If you use MonkeyLoader, there is a [v0.24.0 prerelease](https://github.com/ResoniteModdingGroup/MonkeyLoader.GamePacks.Resonite/releases/tag/v0.24.0) as well, but it wasn't tested by us.
+The following steps are for ResoniteModLoader, if you use MonkeyLoader follow their guide on their release page. 
+
+1. Activate the prerelease version of Resonite in Steam (Resonite → Context Menu (Right Click) → Properties → Betas → Beta Participation: prerelease) 
+2. (Optional) Under General → Launch Options add `-SkipIntroTutorial` to the text field to avoid the tutorial at start.
+3. Copy `ResoniteModLoader.dll` from the `Libraries` folder to a backup location and replace it with new downloaded `ResoniteModLoader.dll` file.
+4. Copy `0Harmony-Net9.dll` into the `rml_libs` folder.
+5. To prevent old and not updated mods from loading, rename your current `rml_mods` folder to something else and create a new `rml_mods` folder.
+6. Copy `Restrainite.dll` and `ResoniteModSettings.dll` into the new `rml_mods` folder.
+7. Check the GitHub pages of other mods you are using for prerelease versions.
+8. Report any bugs you can find to our [issue tracker](https://github.com/Restrainite/Restrainite/issues).
 
 If you want to use the stable version of Resonite again, revert all these changes.
 
