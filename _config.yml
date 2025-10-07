@@ -2,6 +2,7 @@ theme: just-the-docs
 
 title: Restrainite
 description: A ResoniteModLoader mod for Resonite that allows others to control restrictions of the local user.
+url: "https://restrainite.github.io/"
 
 aux_links:
   "Download":
@@ -11,10 +12,12 @@ aux_links:
 
 color_scheme: dark
 
-
 callouts:
   highlight:
     color: yellow
   important:
     title: Important
     color: purple
+
+plugins:
+  - jekyll-sitemap
