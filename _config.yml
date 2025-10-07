@@ -2,7 +2,7 @@ theme: just-the-docs
 
 title: Restrainite
 description: A ResoniteModLoader mod for Resonite that allows others to control restrictions of the local user.
-url: "https://restrainite.github.io/"
+url: "https://restrainite.github.io"
 
 aux_links:
   "Download":
